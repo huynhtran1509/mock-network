@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D9A407A21D65F46000A6E4FC"
-               BuildableName = "NetworkFixtures.framework"
-               BlueprintName = "NetworkFixtures (iOS)"
-               ReferencedContainer = "container:NetworkFixtures.xcodeproj">
+               BlueprintIdentifier = "D9A407C21D65F4BA00A6E4FC"
+               BuildableName = "MockNetwork.framework"
+               BlueprintName = "MockNetwork (tvOS)"
+               ReferencedContainer = "container:MockNetwork.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D9A407AB1D65F46000A6E4FC"
-               BuildableName = "NetworkFixturesTests (iOS).xctest"
-               BlueprintName = "NetworkFixturesTests (iOS)"
-               ReferencedContainer = "container:NetworkFixtures.xcodeproj">
+               BlueprintIdentifier = "D9A407CA1D65F4BA00A6E4FC"
+               BuildableName = "MockNetworkTests (tvOS).xctest"
+               BlueprintName = "MockNetworkTests (tvOS)"
+               ReferencedContainer = "container:MockNetwork.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D9A407A21D65F46000A6E4FC"
-            BuildableName = "NetworkFixtures.framework"
-            BlueprintName = "NetworkFixtures (iOS)"
-            ReferencedContainer = "container:NetworkFixtures.xcodeproj">
+            BlueprintIdentifier = "D9A407C21D65F4BA00A6E4FC"
+            BuildableName = "MockNetwork.framework"
+            BlueprintName = "MockNetwork (tvOS)"
+            ReferencedContainer = "container:MockNetwork.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,10 +64,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D9A407A21D65F46000A6E4FC"
-            BuildableName = "NetworkFixtures.framework"
-            BlueprintName = "NetworkFixtures (iOS)"
-            ReferencedContainer = "container:NetworkFixtures.xcodeproj">
+            BlueprintIdentifier = "D9A407C21D65F4BA00A6E4FC"
+            BuildableName = "MockNetwork.framework"
+            BlueprintName = "MockNetwork (tvOS)"
+            ReferencedContainer = "container:MockNetwork.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -82,10 +82,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D9A407A21D65F46000A6E4FC"
-            BuildableName = "NetworkFixtures.framework"
-            BlueprintName = "NetworkFixtures (iOS)"
-            ReferencedContainer = "container:NetworkFixtures.xcodeproj">
+            BlueprintIdentifier = "D9A407C21D65F4BA00A6E4FC"
+            BuildableName = "MockNetwork.framework"
+            BlueprintName = "MockNetwork (tvOS)"
+            ReferencedContainer = "container:MockNetwork.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

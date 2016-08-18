@@ -9,33 +9,47 @@
 import Foundation
 import XMLPushParser
 
-
 extension MockResponse {
-    init(parser: MockNetworkFixtureXML.Parser) throws {
-        guard let parser = parser.children[.session]?.first as? SessionParser else {
-            throw MockNetworkFixtureXML.ParseError.sessionIsRequired
+    init(fileURL: URL) {
+        let data: Data
+        do {
+            data = try Data(contentsOf: fileURL)
+        } catch {
+            fatalError("Error reading fixture file: \(error)")
         }
-        try self.init(parser: parser)
+        do {
+            let parser = try XMLPushParser<FixtureXML.Parser>().parse(data)
+            try self.init(parser: parser, url: fileURL)
+        } catch {
+            fatalError("Error parsing XML: \(error)")
+        }
     }
 
-    private init(parser: SessionParser) throws {
+    init(parser: FixtureXML.Parser, url: URL) throws {
+        guard let parser = parser.children[.session]?.first as? SessionParser else {
+            throw FixtureXML.ParseError.sessionIsRequired
+        }
+        try self.init(parser: parser, url: url)
+    }
+
+    private init(parser: SessionParser, url: URL) throws {
         guard let transactionParser = parser.transaction else {
             throw SessionParser.ParseError.transactionIsRequired
         }
-        try self.init(parser: transactionParser)
+        try self.init(parser: transactionParser, url: url)
     }
 
-    private init(parser: TransactionParser) throws {
+    private init(parser: TransactionParser, url: URL) throws {
         guard let responseParser = parser.response else {
             throw TransactionParser.ParseError.responseIsRequired
         }
         guard let httpVersion = parser.httpVersion else {
             throw TransactionParser.ParseError.httpVersionIsRequired
         }
-        try self.init(parser: responseParser, httpVersion: httpVersion)
+        try self.init(parser: responseParser, url: url, httpVersion: httpVersion)
     }
 
-    private init(parser: ResponseXML.Parser, httpVersion: String) throws {
+    private init(parser: ResponseXML.Parser, url: URL, httpVersion: String) throws {
         guard let statusCode = parser.statusCode else {
             throw ResponseXML.ParseError.statusCodeIsRequired
         }
@@ -73,6 +87,7 @@ extension MockResponse {
             }
         }
 
+        self.url = url
         self.statusCode = statusCode
         self.httpVersion = httpVersion
         self.headers = headers
@@ -80,7 +95,7 @@ extension MockResponse {
     }
 }
 
-enum MockNetworkFixtureXML {
+enum FixtureXML {
     enum ParseError: Error {
         case sessionIsRequired
     }

@@ -7,10 +7,21 @@
 //
 
 import Foundation
-import XMLPushParser
 
-class MockNetwork: URLProtocol {
-    static let fixtures: [MockNetworkFixture] = {
+public let mockNetworkEnvironmentVariable = "MOCK_NETWORK_FIXTURES"
+
+public class MockNetwork: URLProtocol {
+    public class func register() {
+        if ProcessInfo().environment[mockNetworkEnvironmentVariable] != nil {
+            URLProtocol.registerClass(MockNetwork.self)
+        }
+    }
+
+    public class func load(fixtures: [Fixture], in environment: inout [String:String]) {
+        environment[mockNetworkEnvironmentVariable] = fixtures.toJSON()
+    }
+
+    static let fixtures: [Fixture] = {
         guard let jsonString = ProcessInfo().environment[mockNetworkEnvironmentVariable] else {
             return []
         }
@@ -28,24 +39,24 @@ class MockNetwork: URLProtocol {
             fatalError("Could not properly parse JSON: \(error)")
         }
         do {
-            return try jsonObject.map({ try MockNetworkFixture(json: $0) })
+            return try jsonObject.map({ try Fixture(json: $0) })
         } catch {
             fatalError("Could not reconstitute fixtures: \(error)")
         }
     }()
 
-    override class func canInit(with request: URLRequest) -> Bool {
+    override public class func canInit(with request: URLRequest) -> Bool {
         guard let url = request.url?.absoluteString else {
             return false
         }
         return fixtures.firstMatching(url: url) != nil
     }
 
-    override class func canonicalRequest(for request: URLRequest) -> URLRequest {
+    override public class func canonicalRequest(for request: URLRequest) -> URLRequest {
         return request
     }
 
-    override func startLoading() {
+    override public func startLoading() {
         guard let url = request.url?.absoluteString,
             let fixture = MockNetwork.fixtures.firstMatching(url: url)
         else { fatalError() }
@@ -55,42 +66,13 @@ class MockNetwork: URLProtocol {
         }
 
         let file = URL(fileURLWithPath: path)
-        let data: Data
-        let parser: MockNetworkFixtureXML.Parser
-        let mock: MockResponse
-
-        do {
-            data = try Data(contentsOf: file)
-        } catch {
-            fatalError("Error reading fixture file: \(error)")
-        }
-        do {
-            parser = try XMLPushParser<MockNetworkFixtureXML.Parser>().parse(data)
-            mock = try MockResponse(parser: parser)
-        } catch {
-            fatalError("Error parsing XML: \(error)")
-        }
-
-        var headers = mock.headers
-        headers["Content-Length"] = "\(mock.body.count)"
-
-        guard let response = HTTPURLResponse(url: file, statusCode: mock.statusCode,
-                                             httpVersion: mock.httpVersion, headerFields: headers) else {
-            fatalError("Error building HTTPURLResponse")
-        }
+        let mock = MockResponse(fileURL: file)
 
         client?.urlProtocol(self, didLoad: mock.body)
-        client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .notAllowed)
+        client?.urlProtocol(self, didReceive: mock.httpURLResponse, cacheStoragePolicy: .notAllowed)
         client?.urlProtocolDidFinishLoading(self)
     }
 
-    override func stopLoading() {}
-}
-
-struct MockResponse {
-    var httpVersion: String
-    var statusCode: Int
-    var headers: [String:String]
-    var body: Data
+    override public func stopLoading() {}
 }
 

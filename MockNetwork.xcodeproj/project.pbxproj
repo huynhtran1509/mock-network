@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D9A407AD1D65F46000A6E4FC /* NetworkFixtures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A407A31D65F46000A6E4FC /* NetworkFixtures.framework */; };
-		D9A407B21D65F46000A6E4FC /* NetworkFixturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A407B11D65F46000A6E4FC /* NetworkFixturesTests.swift */; };
-		D9A407B41D65F46000A6E4FC /* NetworkFixtures.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A407A61D65F46000A6E4FC /* NetworkFixtures.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D9A407CC1D65F4BA00A6E4FC /* NetworkFixtures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A407C31D65F4BA00A6E4FC /* NetworkFixtures.framework */; };
+		D9A407AD1D65F46000A6E4FC /* MockNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A407A31D65F46000A6E4FC /* MockNetwork.framework */; };
+		D9A407B21D65F46000A6E4FC /* MockNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A407B11D65F46000A6E4FC /* MockNetworkTests.swift */; };
+		D9A407B41D65F46000A6E4FC /* MockNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A407A61D65F46000A6E4FC /* MockNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9A407CC1D65F4BA00A6E4FC /* MockNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A407C31D65F4BA00A6E4FC /* MockNetwork.framework */; };
 		D9A407DE1D65F55000A6E4FC /* FixtureParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A407DB1D65F55000A6E4FC /* FixtureParser.swift */; };
 		D9A407DF1D65F55000A6E4FC /* MockNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A407DC1D65F55000A6E4FC /* MockNetwork.swift */; };
 		D9A407E01D65F55000A6E4FC /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A407DD1D65F55000A6E4FC /* Fixture.swift */; };
@@ -29,26 +29,26 @@
 			containerPortal = D9A4079A1D65F46000A6E4FC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D9A407A21D65F46000A6E4FC;
-			remoteInfo = NetworkFixtures;
+			remoteInfo = MockNetwork;
 		};
 		D9A407CD1D65F4BA00A6E4FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D9A4079A1D65F46000A6E4FC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D9A407C21D65F4BA00A6E4FC;
-			remoteInfo = NetworkFixtures;
+			remoteInfo = MockNetwork;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D9A407A31D65F46000A6E4FC /* NetworkFixtures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkFixtures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9A407A61D65F46000A6E4FC /* NetworkFixtures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkFixtures.h; sourceTree = "<group>"; };
+		D9A407A31D65F46000A6E4FC /* MockNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MockNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9A407A61D65F46000A6E4FC /* MockNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockNetwork.h; sourceTree = "<group>"; };
 		D9A407A71D65F46000A6E4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9A407AC1D65F46000A6E4FC /* NetworkFixturesTests (iOS).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NetworkFixturesTests (iOS).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9A407B11D65F46000A6E4FC /* NetworkFixturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFixturesTests.swift; sourceTree = "<group>"; };
+		D9A407AC1D65F46000A6E4FC /* MockNetworkTests (iOS).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MockNetworkTests (iOS).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9A407B11D65F46000A6E4FC /* MockNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkTests.swift; sourceTree = "<group>"; };
 		D9A407B31D65F46000A6E4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9A407C31D65F4BA00A6E4FC /* NetworkFixtures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkFixtures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9A407CB1D65F4BA00A6E4FC /* NetworkFixturesTests (tvOS).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NetworkFixturesTests (tvOS).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9A407C31D65F4BA00A6E4FC /* MockNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MockNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9A407CB1D65F4BA00A6E4FC /* MockNetworkTests (tvOS).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MockNetworkTests (tvOS).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A407DB1D65F55000A6E4FC /* FixtureParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixtureParser.swift; sourceTree = "<group>"; };
 		D9A407DC1D65F55000A6E4FC /* MockNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetwork.swift; sourceTree = "<group>"; };
 		D9A407DD1D65F55000A6E4FC /* Fixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fixture.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9A407AD1D65F46000A6E4FC /* NetworkFixtures.framework in Frameworks */,
+				D9A407AD1D65F46000A6E4FC /* MockNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9A407CC1D65F4BA00A6E4FC /* NetworkFixtures.framework in Frameworks */,
+				D9A407CC1D65F4BA00A6E4FC /* MockNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,8 +96,8 @@
 		D9A407991D65F46000A6E4FC = {
 			isa = PBXGroup;
 			children = (
-				D9A407A51D65F46000A6E4FC /* NetworkFixtures */,
-				D9A407B01D65F46000A6E4FC /* NetworkFixturesTests */,
+				D9A407A51D65F46000A6E4FC /* MockNetwork */,
+				D9A407B01D65F46000A6E4FC /* MockNetworkTests */,
 				D9A407A41D65F46000A6E4FC /* Products */,
 				D9A407E11D65F5CB00A6E4FC /* Frameworks */,
 			);
@@ -106,31 +106,31 @@
 		D9A407A41D65F46000A6E4FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D9A407A31D65F46000A6E4FC /* NetworkFixtures.framework */,
-				D9A407AC1D65F46000A6E4FC /* NetworkFixturesTests (iOS).xctest */,
-				D9A407C31D65F4BA00A6E4FC /* NetworkFixtures.framework */,
-				D9A407CB1D65F4BA00A6E4FC /* NetworkFixturesTests (tvOS).xctest */,
+				D9A407A31D65F46000A6E4FC /* MockNetwork.framework */,
+				D9A407AC1D65F46000A6E4FC /* MockNetworkTests (iOS).xctest */,
+				D9A407C31D65F4BA00A6E4FC /* MockNetwork.framework */,
+				D9A407CB1D65F4BA00A6E4FC /* MockNetworkTests (tvOS).xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D9A407A51D65F46000A6E4FC /* NetworkFixtures */ = {
+		D9A407A51D65F46000A6E4FC /* MockNetwork */ = {
 			isa = PBXGroup;
 			children = (
 				D9A407DA1D65F55000A6E4FC /* Sources */,
-				D9A407A61D65F46000A6E4FC /* NetworkFixtures.h */,
+				D9A407A61D65F46000A6E4FC /* MockNetwork.h */,
 				D9A407A71D65F46000A6E4FC /* Info.plist */,
 			);
-			path = NetworkFixtures;
+			path = MockNetwork;
 			sourceTree = "<group>";
 		};
-		D9A407B01D65F46000A6E4FC /* NetworkFixturesTests */ = {
+		D9A407B01D65F46000A6E4FC /* MockNetworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				D9A407B11D65F46000A6E4FC /* NetworkFixturesTests.swift */,
+				D9A407B11D65F46000A6E4FC /* MockNetworkTests.swift */,
 				D9A407B31D65F46000A6E4FC /* Info.plist */,
 			);
-			path = NetworkFixturesTests;
+			path = MockNetworkTests;
 			sourceTree = "<group>";
 		};
 		D9A407DA1D65F55000A6E4FC /* Sources */ = {
@@ -141,7 +141,8 @@
 				D9A407DD1D65F55000A6E4FC /* Fixture.swift */,
 				D9A407DB1D65F55000A6E4FC /* FixtureParser.swift */,
 			);
-			path = Sources;
+			name = Sources;
+			path = ../Sources;
 			sourceTree = "<group>";
 		};
 		D9A407E11D65F5CB00A6E4FC /* Frameworks */ = {
@@ -160,7 +161,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9A407B41D65F46000A6E4FC /* NetworkFixtures.h in Headers */,
+				D9A407B41D65F46000A6E4FC /* MockNetwork.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,9 +175,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D9A407A21D65F46000A6E4FC /* NetworkFixtures (iOS) */ = {
+		D9A407A21D65F46000A6E4FC /* MockNetwork (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9A407B71D65F46000A6E4FC /* Build configuration list for PBXNativeTarget "NetworkFixtures (iOS)" */;
+			buildConfigurationList = D9A407B71D65F46000A6E4FC /* Build configuration list for PBXNativeTarget "MockNetwork (iOS)" */;
 			buildPhases = (
 				D9A4079E1D65F46000A6E4FC /* Sources */,
 				D9A4079F1D65F46000A6E4FC /* Frameworks */,
@@ -187,14 +188,14 @@
 			);
 			dependencies = (
 			);
-			name = "NetworkFixtures (iOS)";
-			productName = NetworkFixtures;
-			productReference = D9A407A31D65F46000A6E4FC /* NetworkFixtures.framework */;
+			name = "MockNetwork (iOS)";
+			productName = MockNetwork;
+			productReference = D9A407A31D65F46000A6E4FC /* MockNetwork.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D9A407AB1D65F46000A6E4FC /* NetworkFixturesTests (iOS) */ = {
+		D9A407AB1D65F46000A6E4FC /* MockNetworkTests (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9A407BA1D65F46000A6E4FC /* Build configuration list for PBXNativeTarget "NetworkFixturesTests (iOS)" */;
+			buildConfigurationList = D9A407BA1D65F46000A6E4FC /* Build configuration list for PBXNativeTarget "MockNetworkTests (iOS)" */;
 			buildPhases = (
 				D9A407A81D65F46000A6E4FC /* Sources */,
 				D9A407A91D65F46000A6E4FC /* Frameworks */,
@@ -205,14 +206,14 @@
 			dependencies = (
 				D9A407AF1D65F46000A6E4FC /* PBXTargetDependency */,
 			);
-			name = "NetworkFixturesTests (iOS)";
-			productName = NetworkFixturesTests;
-			productReference = D9A407AC1D65F46000A6E4FC /* NetworkFixturesTests (iOS).xctest */;
+			name = "MockNetworkTests (iOS)";
+			productName = MockNetworkTests;
+			productReference = D9A407AC1D65F46000A6E4FC /* MockNetworkTests (iOS).xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D9A407C21D65F4BA00A6E4FC /* NetworkFixtures (tvOS) */ = {
+		D9A407C21D65F4BA00A6E4FC /* MockNetwork (tvOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9A407D41D65F4BA00A6E4FC /* Build configuration list for PBXNativeTarget "NetworkFixtures (tvOS)" */;
+			buildConfigurationList = D9A407D41D65F4BA00A6E4FC /* Build configuration list for PBXNativeTarget "MockNetwork (tvOS)" */;
 			buildPhases = (
 				D9A407BE1D65F4BA00A6E4FC /* Sources */,
 				D9A407BF1D65F4BA00A6E4FC /* Frameworks */,
@@ -223,14 +224,14 @@
 			);
 			dependencies = (
 			);
-			name = "NetworkFixtures (tvOS)";
-			productName = NetworkFixtures;
-			productReference = D9A407C31D65F4BA00A6E4FC /* NetworkFixtures.framework */;
+			name = "MockNetwork (tvOS)";
+			productName = MockNetwork;
+			productReference = D9A407C31D65F4BA00A6E4FC /* MockNetwork.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D9A407CA1D65F4BA00A6E4FC /* NetworkFixturesTests (tvOS) */ = {
+		D9A407CA1D65F4BA00A6E4FC /* MockNetworkTests (tvOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9A407D71D65F4BA00A6E4FC /* Build configuration list for PBXNativeTarget "NetworkFixturesTests (tvOS)" */;
+			buildConfigurationList = D9A407D71D65F4BA00A6E4FC /* Build configuration list for PBXNativeTarget "MockNetworkTests (tvOS)" */;
 			buildPhases = (
 				D9A407C71D65F4BA00A6E4FC /* Sources */,
 				D9A407C81D65F4BA00A6E4FC /* Frameworks */,
@@ -241,9 +242,9 @@
 			dependencies = (
 				D9A407CE1D65F4BA00A6E4FC /* PBXTargetDependency */,
 			);
-			name = "NetworkFixturesTests (tvOS)";
-			productName = NetworkFixturesTests;
-			productReference = D9A407CB1D65F4BA00A6E4FC /* NetworkFixturesTests (tvOS).xctest */;
+			name = "MockNetworkTests (tvOS)";
+			productName = MockNetworkTests;
+			productReference = D9A407CB1D65F4BA00A6E4FC /* MockNetworkTests (tvOS).xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -278,7 +279,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D9A4079D1D65F46000A6E4FC /* Build configuration list for PBXProject "NetworkFixtures" */;
+			buildConfigurationList = D9A4079D1D65F46000A6E4FC /* Build configuration list for PBXProject "MockNetwork" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -290,10 +291,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D9A407A21D65F46000A6E4FC /* NetworkFixtures (iOS) */,
-				D9A407AB1D65F46000A6E4FC /* NetworkFixturesTests (iOS) */,
-				D9A407C21D65F4BA00A6E4FC /* NetworkFixtures (tvOS) */,
-				D9A407CA1D65F4BA00A6E4FC /* NetworkFixturesTests (tvOS) */,
+				D9A407A21D65F46000A6E4FC /* MockNetwork (iOS) */,
+				D9A407AB1D65F46000A6E4FC /* MockNetworkTests (iOS) */,
+				D9A407C21D65F4BA00A6E4FC /* MockNetwork (tvOS) */,
+				D9A407CA1D65F4BA00A6E4FC /* MockNetworkTests (tvOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -345,7 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9A407B21D65F46000A6E4FC /* NetworkFixturesTests.swift in Sources */,
+				D9A407B21D65F46000A6E4FC /* MockNetworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,12 +373,12 @@
 /* Begin PBXTargetDependency section */
 		D9A407AF1D65F46000A6E4FC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D9A407A21D65F46000A6E4FC /* NetworkFixtures (iOS) */;
+			target = D9A407A21D65F46000A6E4FC /* MockNetwork (iOS) */;
 			targetProxy = D9A407AE1D65F46000A6E4FC /* PBXContainerItemProxy */;
 		};
 		D9A407CE1D65F4BA00A6E4FC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D9A407C21D65F4BA00A6E4FC /* NetworkFixtures (tvOS) */;
+			target = D9A407C21D65F4BA00A6E4FC /* MockNetwork (tvOS) */;
 			targetProxy = D9A407CD1D65F4BA00A6E4FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -495,11 +496,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = NetworkFixtures/Info.plist;
+				INFOPLIST_FILE = MockNetwork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.willowtreeapps.NetworkFixtures;
-				PRODUCT_NAME = NetworkFixtures;
+				PRODUCT_BUNDLE_IDENTIFIER = com.willowtreeapps.MockNetwork;
+				PRODUCT_NAME = MockNetwork;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -518,11 +519,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = NetworkFixtures/Info.plist;
+				INFOPLIST_FILE = MockNetwork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.willowtreeapps.NetworkFixtures;
-				PRODUCT_NAME = NetworkFixtures;
+				PRODUCT_BUNDLE_IDENTIFIER = com.willowtreeapps.MockNetwork;
+				PRODUCT_NAME = MockNetwork;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -533,9 +534,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7UMFPW78PV;
-				INFOPLIST_FILE = NetworkFixturesTests/Info.plist;
+				INFOPLIST_FILE = MockNetworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.willowtreeapps.NetworkFixturesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.willowtreeapps.MockNetworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -546,9 +547,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7UMFPW78PV;
-				INFOPLIST_FILE = NetworkFixturesTests/Info.plist;
+				INFOPLIST_FILE = MockNetworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.willowtreeapps.NetworkFixturesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.willowtreeapps.MockNetworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -567,11 +568,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = NetworkFixtures/Info.plist;
+				INFOPLIST_FILE = MockNetwork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.willowtreeapps.NetworkFixtures;
-				PRODUCT_NAME = NetworkFixtures;
+				PRODUCT_BUNDLE_IDENTIFIER = com.willowtreeapps.MockNetwork;
+				PRODUCT_NAME = MockNetwork;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -593,11 +594,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = NetworkFixtures/Info.plist;
+				INFOPLIST_FILE = MockNetwork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.willowtreeapps.NetworkFixtures;
-				PRODUCT_NAME = NetworkFixtures;
+				PRODUCT_BUNDLE_IDENTIFIER = com.willowtreeapps.MockNetwork;
+				PRODUCT_NAME = MockNetwork;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -611,9 +612,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7UMFPW78PV;
-				INFOPLIST_FILE = NetworkFixturesTests/Info.plist;
+				INFOPLIST_FILE = MockNetworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.willowtreeapps.NetworkFixturesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.willowtreeapps.MockNetworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 3.0;
@@ -626,9 +627,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7UMFPW78PV;
-				INFOPLIST_FILE = NetworkFixturesTests/Info.plist;
+				INFOPLIST_FILE = MockNetworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.willowtreeapps.NetworkFixturesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.willowtreeapps.MockNetworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 3.0;
@@ -639,7 +640,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D9A4079D1D65F46000A6E4FC /* Build configuration list for PBXProject "NetworkFixtures" */ = {
+		D9A4079D1D65F46000A6E4FC /* Build configuration list for PBXProject "MockNetwork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9A407B51D65F46000A6E4FC /* Debug */,
@@ -648,7 +649,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9A407B71D65F46000A6E4FC /* Build configuration list for PBXNativeTarget "NetworkFixtures (iOS)" */ = {
+		D9A407B71D65F46000A6E4FC /* Build configuration list for PBXNativeTarget "MockNetwork (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9A407B81D65F46000A6E4FC /* Debug */,
@@ -657,7 +658,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9A407BA1D65F46000A6E4FC /* Build configuration list for PBXNativeTarget "NetworkFixturesTests (iOS)" */ = {
+		D9A407BA1D65F46000A6E4FC /* Build configuration list for PBXNativeTarget "MockNetworkTests (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9A407BB1D65F46000A6E4FC /* Debug */,
@@ -666,21 +667,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9A407D41D65F4BA00A6E4FC /* Build configuration list for PBXNativeTarget "NetworkFixtures (tvOS)" */ = {
+		D9A407D41D65F4BA00A6E4FC /* Build configuration list for PBXNativeTarget "MockNetwork (tvOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9A407D51D65F4BA00A6E4FC /* Debug */,
 				D9A407D61D65F4BA00A6E4FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		D9A407D71D65F4BA00A6E4FC /* Build configuration list for PBXNativeTarget "NetworkFixturesTests (tvOS)" */ = {
+		D9A407D71D65F4BA00A6E4FC /* Build configuration list for PBXNativeTarget "MockNetworkTests (tvOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9A407D81D65F4BA00A6E4FC /* Debug */,
 				D9A407D91D65F4BA00A6E4FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
