@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D9A407A21D65F46000A6E4FC"
-               BuildableName = "NetworkFixtures (iOS).framework"
+               BuildableName = "NetworkFixtures.framework"
                BlueprintName = "NetworkFixtures (iOS)"
                ReferencedContainer = "container:NetworkFixtures.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D9A407A21D65F46000A6E4FC"
-            BuildableName = "NetworkFixtures (iOS).framework"
+            BuildableName = "NetworkFixtures.framework"
             BlueprintName = "NetworkFixtures (iOS)"
             ReferencedContainer = "container:NetworkFixtures.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D9A407A21D65F46000A6E4FC"
-            BuildableName = "NetworkFixtures (iOS).framework"
+            BuildableName = "NetworkFixtures.framework"
             BlueprintName = "NetworkFixtures (iOS)"
             ReferencedContainer = "container:NetworkFixtures.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D9A407A21D65F46000A6E4FC"
-            BuildableName = "NetworkFixtures (iOS).framework"
+            BuildableName = "NetworkFixtures.framework"
             BlueprintName = "NetworkFixtures (iOS)"
             ReferencedContainer = "container:NetworkFixtures.xcodeproj">
          </BuildableReference>

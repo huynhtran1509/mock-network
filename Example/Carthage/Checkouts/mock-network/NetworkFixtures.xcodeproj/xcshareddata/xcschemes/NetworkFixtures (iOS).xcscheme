@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D9A407C21D65F4BA00A6E4FC"
-               BuildableName = "NetworkFixtures.framework"
-               BlueprintName = "NetworkFixtures (tvOS)"
+               BlueprintIdentifier = "D9A407A21D65F46000A6E4FC"
+               BuildableName = "NetworkFixtures (iOS).framework"
+               BlueprintName = "NetworkFixtures (iOS)"
                ReferencedContainer = "container:NetworkFixtures.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D9A407CA1D65F4BA00A6E4FC"
-               BuildableName = "NetworkFixturesTests (tvOS).xctest"
-               BlueprintName = "NetworkFixturesTests (tvOS)"
+               BlueprintIdentifier = "D9A407AB1D65F46000A6E4FC"
+               BuildableName = "NetworkFixturesTests (iOS).xctest"
+               BlueprintName = "NetworkFixturesTests (iOS)"
                ReferencedContainer = "container:NetworkFixtures.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D9A407C21D65F4BA00A6E4FC"
-            BuildableName = "NetworkFixtures.framework"
-            BlueprintName = "NetworkFixtures (tvOS)"
+            BlueprintIdentifier = "D9A407A21D65F46000A6E4FC"
+            BuildableName = "NetworkFixtures (iOS).framework"
+            BlueprintName = "NetworkFixtures (iOS)"
             ReferencedContainer = "container:NetworkFixtures.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D9A407C21D65F4BA00A6E4FC"
-            BuildableName = "NetworkFixtures.framework"
-            BlueprintName = "NetworkFixtures (tvOS)"
+            BlueprintIdentifier = "D9A407A21D65F46000A6E4FC"
+            BuildableName = "NetworkFixtures (iOS).framework"
+            BlueprintName = "NetworkFixtures (iOS)"
             ReferencedContainer = "container:NetworkFixtures.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D9A407C21D65F4BA00A6E4FC"
-            BuildableName = "NetworkFixtures.framework"
-            BlueprintName = "NetworkFixtures (tvOS)"
+            BlueprintIdentifier = "D9A407A21D65F46000A6E4FC"
+            BuildableName = "NetworkFixtures (iOS).framework"
+            BlueprintName = "NetworkFixtures (iOS)"
             ReferencedContainer = "container:NetworkFixtures.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

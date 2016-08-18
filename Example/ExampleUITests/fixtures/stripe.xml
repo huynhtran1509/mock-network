@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE charles-session SYSTEM "http://www.charlesproxy.com/dtd/charles-session-1_0.dtd">
+
+<charles-session>
+<transaction status="Complete" method="GET" protocolVersion="HTTP/1.1" protocol="https" host="api.stripe.com" actualPort="443" path="/" remoteAddress="api.stripe.com/54.187.208.163" clientAddress="/127.0.0.1" startTime="2016-08-17T14:11:05.980-04:00" startTimeMillis="1471457465980" requestBeginTime="2016-08-17T14:11:05.980-04:00" requestBeginTimeMillis="1471457465980" requestTime="2016-08-17T14:11:05.981-04:00" requestTimeMillis="1471457465981" responseTime="2016-08-17T14:11:06.069-04:00" responseTimeMillis="1471457466069" endTime="2016-08-17T14:11:06.069-04:00" endTimeMillis="1471457466069" duration="89" requestDuration="1" responseDuration="0" latency="88" overallSpeed="10876" totalSize="968">
+<ssl protocol="TLSv1.2" cipherSuite="TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256" />
+<request headers="200" body="0">
+<headers>
+<first-line><![CDATA[GET / HTTP/1.1]]></first-line>
+<header>
+<name>Host</name>
+<value>api.stripe.com</value></header>
+<header>
+<name>Accept</name>
+<value>*/*</value></header>
+<header>
+<name>Accept-Language</name>
+<value>en-us</value></header>
+<header>
+<name>Connection</name>
+<value>keep-alive</value></header>
+<header>
+<name>Accept-Encoding</name>
+<value>gzip, deflate</value></header>
+<header>
+<name>User-Agent</name>
+<value>$%28PRODUCT_NAME%29/1 CFNetwork/808.0.1 Darwin/15.6.0</value></header></headers></request>
+<response status="401" headers="426" body="342" mime-type="application/json">
+<headers>
+<first-line><![CDATA[HTTP/1.1 401 Unauthorized]]></first-line>
+<header>
+<name>Server</name>
+<value>nginx</value></header>
+<header>
+<name>Date</name>
+<value>Wed, 17 Aug 2016 18:11:06 GMT</value></header>
+<header>
+<name>Content-Type</name>
+<value>application/json</value></header>
+<header>
+<name>Content-Length</name>
+<value>342</value></header>
+<header>
+<name>Connection</name>
+<value>keep-alive</value></header>
+<header>
+<name>Access-Control-Allow-Credentials</name>
+<value>true</value></header>
+<header>
+<name>Access-Control-Allow-Methods</name>
+<value>GET, POST, HEAD, OPTIONS, DELETE</value></header>
+<header>
+<name>Access-Control-Allow-Origin</name>
+<value>*</value></header>
+<header>
+<name>Access-Control-Max-Age</name>
+<value>300</value></header>
+<header>
+<name>Cache-Control</name>
+<value>no-cache, no-store</value></header>
+<header>
+<name>Stripe-Version</name>
+<value>2016-07-06</value></header>
+<header>
+<name>Www-Authenticate</name>
+<value>Basic realm=&quot;Stripe&quot;</value></header></headers>
+<body><![CDATA[{
+  "error": {
+    "type": "in ur codez",
+    "message": "You did not provide an API key. You need to provide your API key in the Authorization header, using Bearer auth (e.g. 'Authorization: Bearer YOUR_SECRET_KEY'). See https://stripe.com/docs/api#authentication for details, or we can help at https://support.stripe.com/."
+  }
+}
+]]></body></response></transaction></charles-session>
