@@ -13,7 +13,7 @@
 		D99100B21D662792008EC635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99100B11D662792008EC635 /* Assets.xcassets */; };
 		D99100B51D662792008EC635 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99100B31D662792008EC635 /* LaunchScreen.storyboard */; };
 		D99100C01D662793008EC635 /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99100BF1D662793008EC635 /* ExampleUITests.swift */; };
-		D99100CD1D662859008EC635 /* NetworkFixtures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99100CB1D662859008EC635 /* NetworkFixtures.framework */; };
+		D99100CD1D662859008EC635 /* MockNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99100CB1D662859008EC635 /* MockNetwork.framework */; };
 		D99100CE1D662859008EC635 /* XMLPushParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99100CC1D662859008EC635 /* XMLPushParser.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +38,7 @@
 		D99100BB1D662793008EC635 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99100BF1D662793008EC635 /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		D99100C11D662793008EC635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D99100CB1D662859008EC635 /* NetworkFixtures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkFixtures.framework; path = Carthage/Build/iOS/NetworkFixtures.framework; sourceTree = "<group>"; };
+		D99100CB1D662859008EC635 /* MockNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MockNetwork.framework; path = Carthage/Build/iOS/MockNetwork.framework; sourceTree = "<group>"; };
 		D99100CC1D662859008EC635 /* XMLPushParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XMLPushParser.framework; path = Carthage/Build/iOS/XMLPushParser.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D99100CD1D662859008EC635 /* NetworkFixtures.framework in Frameworks */,
+				D99100CD1D662859008EC635 /* MockNetwork.framework in Frameworks */,
 				D99100CE1D662859008EC635 /* XMLPushParser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,7 +106,7 @@
 		D99100CA1D662859008EC635 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D99100CB1D662859008EC635 /* NetworkFixtures.framework */,
+				D99100CB1D662859008EC635 /* MockNetwork.framework */,
 				D99100CC1D662859008EC635 /* XMLPushParser.framework */,
 			);
 			name = Frameworks;
@@ -222,7 +222,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/XMLPushParser.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/NetworkFixtures.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MockNetwork.framework",
 			);
 			name = "Carthage Copy Frameworks";
 			outputPaths = (
@@ -238,7 +238,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/XMLPushParser.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/NetworkFixtures.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MockNetwork.framework",
 			);
 			outputPaths = (
 			);

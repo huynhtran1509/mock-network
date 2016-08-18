@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import NetworkFixtures
+import MockNetwork
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

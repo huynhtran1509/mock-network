@@ -7,8 +7,7 @@
 //
 
 import XCTest
-import NetworkFixtures
-
+import MockNetwork
 
 class ExampleUITests: XCTestCase {
 
