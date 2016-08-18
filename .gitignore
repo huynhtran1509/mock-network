@@ -33,6 +33,7 @@ playground.xcworkspace
 
 .build/
 Carthage/Build
+Example/Carthage
 
 # fastlane
 #
