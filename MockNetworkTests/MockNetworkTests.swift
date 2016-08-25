@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import NetworkFixtures
+@testable import MockNetwork
 
 class NetworkFixturesTests: XCTestCase {
     

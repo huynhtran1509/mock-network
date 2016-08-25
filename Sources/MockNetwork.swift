@@ -21,7 +21,7 @@ public class MockNetwork: URLProtocol {
         environment[mockNetworkEnvironmentVariable] = fixtures.toJSON()
     }
 
-    static let fixtures: [Fixture] = {
+    static var fixtures: [Fixture] = {
         guard let jsonString = ProcessInfo().environment[mockNetworkEnvironmentVariable] else {
             return []
         }
@@ -58,11 +58,27 @@ public class MockNetwork: URLProtocol {
 
     override public func startLoading() {
         guard let url = request.url?.absoluteString,
-            let fixture = MockNetwork.fixtures.firstMatching(url: url)
-        else { fatalError() }
+            let (fixture, index) = MockNetwork.fixtures.firstMatching(url: url)
+        else {
+            fatalError()
+        }
 
         guard case .file(let path) = fixture.type else {
             fatalError("Errors are not supported yet")
+        }
+
+        switch fixture.usage {
+        case .once:
+            MockNetwork.fixtures.remove(at: index)
+        case .nTimes(var i):
+            i -= 1
+            if i <= 0 {
+                MockNetwork.fixtures.remove(at: index)
+            } else {
+                MockNetwork.fixtures[index].usage = .nTimes(i)
+            }
+        default:
+            break
         }
 
         let file = URL(fileURLWithPath: path)
