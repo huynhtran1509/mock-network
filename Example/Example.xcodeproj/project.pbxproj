@@ -15,6 +15,8 @@
 		D99100C01D662793008EC635 /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99100BF1D662793008EC635 /* ExampleUITests.swift */; };
 		D99100CD1D662859008EC635 /* MockNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99100CB1D662859008EC635 /* MockNetwork.framework */; };
 		D99100CE1D662859008EC635 /* XMLPushParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99100CC1D662859008EC635 /* XMLPushParser.framework */; };
+		D9D7D6691D6F473C00EAFEE7 /* stripe.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9D7D6681D6F473C00EAFEE7 /* stripe.xml */; };
+		D9D7D66B1D6F474900EAFEE7 /* retry.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9D7D66A1D6F474900EAFEE7 /* retry.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		D99100C11D662793008EC635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D99100CB1D662859008EC635 /* MockNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MockNetwork.framework; path = Carthage/Build/iOS/MockNetwork.framework; sourceTree = "<group>"; };
 		D99100CC1D662859008EC635 /* XMLPushParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XMLPushParser.framework; path = Carthage/Build/iOS/XMLPushParser.framework; sourceTree = "<group>"; };
+		D9D7D6681D6F473C00EAFEE7 /* stripe.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = stripe.xml; sourceTree = "<group>"; };
+		D9D7D66A1D6F474900EAFEE7 /* retry.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = retry.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		D99100BE1D662793008EC635 /* ExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
+				D9D7D6671D6F473C00EAFEE7 /* fixtures */,
 				D99100BF1D662793008EC635 /* ExampleUITests.swift */,
 				D99100C11D662793008EC635 /* Info.plist */,
 			);
@@ -110,6 +115,15 @@
 				D99100CC1D662859008EC635 /* XMLPushParser.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9D7D6671D6F473C00EAFEE7 /* fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				D9D7D6681D6F473C00EAFEE7 /* stripe.xml */,
+				D9D7D66A1D6F474900EAFEE7 /* retry.xml */,
+			);
+			path = fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +223,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9D7D66B1D6F474900EAFEE7 /* retry.xml in Resources */,
+				D9D7D6691D6F473C00EAFEE7 /* stripe.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

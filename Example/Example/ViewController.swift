@@ -11,9 +11,14 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var textField: UITextField!
-
+    @IBOutlet var retryButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        load()
+    }
+    
+    @IBAction func load() {
         let stripe = URL(string: "https://api.stripe.com/")!
         let task = URLSession.shared.dataTask(with: stripe) { (data, response, error) in
             DispatchQueue.main.async {
@@ -46,5 +51,4 @@ class ViewController: UIViewController {
         }
         task.resume()
     }
-    
 }

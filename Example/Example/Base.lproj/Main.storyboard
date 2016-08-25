@@ -24,15 +24,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fF2-Sv-f7u">
+                                <accessibility key="accessibilityConfiguration" label="retry"/>
+                                <state key="normal" title="Retry"/>
+                                <connections>
+                                    <action selector="load" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Xo-cQ-dAw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="VKg-a8-Miz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2an-ST-xZd"/>
+                            <constraint firstItem="fF2-Sv-f7u" firstAttribute="centerX" secondItem="VKg-a8-Miz" secondAttribute="centerX" id="n7v-ym-PmE"/>
+                            <constraint firstItem="fF2-Sv-f7u" firstAttribute="top" secondItem="VKg-a8-Miz" secondAttribute="bottom" constant="7.5" id="p2b-G0-r8Y"/>
                             <constraint firstItem="VKg-a8-Miz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="vcF-kb-02p"/>
                             <constraint firstItem="VKg-a8-Miz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wv5-oD-NEw"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="retryButton" destination="fF2-Sv-f7u" id="cZb-6J-6XC"/>
                         <outlet property="textField" destination="VKg-a8-Miz" id="epB-7F-4Mf"/>
                     </connections>
                 </viewController>

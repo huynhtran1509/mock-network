@@ -17,8 +17,9 @@ class ExampleUITests: XCTestCase {
         let base = #file.replacingOccurrences(of: "ExampleUITests.swift", with: "fixtures/")
 
         let fixtures: [Fixture] = [
-            try! Fixture(regex: "stripe", type: .file(path: base + "stripe.xml")),
-            ]
+            try! Fixture(regex: "stripe", type: .file(path: base + "stripe.xml"), use: .once),
+            try! Fixture(regex: "stripe", type: .file(path: base + "retry.xml")),
+        ]
 
         continueAfterFailure = false
 
@@ -31,5 +32,10 @@ class ExampleUITests: XCTestCase {
         let textField = XCUIApplication().textFields["stripe response"]
         XCTAssertEqual("in ur codez", textField.value as? String)
     }
-    
+
+    func testRetry() {
+        XCUIApplication().buttons["retry"].tap()
+        let textField = XCUIApplication().textFields["stripe response"]
+        XCTAssertEqual("out of ur codez?", textField.value as? String)
+    }
 }
